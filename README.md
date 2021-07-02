@@ -45,10 +45,9 @@ This data science project focuses on the analysis of Automobile data set from co
 * `Binning` is a process of transforming continuous numerical variables into discrete categorical 'bins' for grouped analysis.
 * Example: --> In our dataset, "horsepower" is a real valued variable ranging from 48 to 288 and it has 57 unique values. What if we only care about the price difference between cars with high horsepower, medium horsepower, and little horsepower (3 types)? Can we rearrange them into three ‘bins' to simplify analysis?
         We will use the pandas method 'cut' to segment the 'horsepower' column into 3 bins.
-        * Bins Visualization
+* Bins Visualization
         
 ### 6. Indicator Variable (or Dummy Variable)
-* We use indicator variables so we can use categorical variables for regression analysis in the later modules.
-* We see the column "fuel-type" has two unique values: "gas" or "diesel". Regression doesn't understand words, only numbers. To use this attribute in regression analysis, we convert "fuel-type" to indicator variables.
+We use indicator variables so we can use categorical variables for regression analysis in the later modules. We see the column "fuel-type" has two unique values: "gas" or "diesel". Regression doesn't understand words, only numbers. To use this attribute in regression analysis, we convert "fuel-type" to indicator variables.
 
 ***
