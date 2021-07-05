@@ -5,9 +5,9 @@ This data science project focuses on the analysis of Automobile data set from co
 ## Data Wrangling procedures
 
 ### 1. Handle missing values
-* Convert "?" to NaN -- In the car dataset, missing data comes with the question mark "?". We replace "?" with NaN (Not a Number)
+* Convert "?" to NaN -- In the car dataset, missing data comes with the question mark "?". i replaced the "?" with NaN (Not a Number)
 * Evaluating for Missing Data -- check wether there are anymore missing data
-* Count missing values in each column -- Using a for loop in Python, we can quickly figure out the number of missing values in each column.
+* Count missing values in each column -- Using a for loop in Python, i counted the number of null values in each column. Alternatively, i also used the isnull().sum() function
 
 #### 1.1 Deal with missing data
 
