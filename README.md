@@ -28,10 +28,12 @@ This data science project focuses on the analysis of Automobile data set from co
 ### 2. Correct data format: 
 * list the data types for each column
 * Convert data types to proper format
+        * bore,stroke, price and peak-prm to float
+        * normalised losses to integer
 * list the columns after the conversion
         
 ### 3. Standardize data
- * `Standardization` is the process of transforming data into a common format, allowing the researcher to make the meaningful comparison. In our dataset, the fuel consumption columns "city-mpg" and "highway-mpg" are represented by mpg (miles per gallon) unit. Assume we are developing an application in a country that accepts the fuel consumption with L/100km standard.
+ * `Standardization` is the process of transforming data into a common format, allowing for meaningful comparison. In our dataset, the fuel consumption columns "city-mpg" and "highway-mpg" are represented by mpg (miles per gallon) unit. Assume we are developing an application in a country that accepts the fuel consumption with L/100km standard.
 * We will need to apply data transformation to transform mpg into L/100km. 
 * The formula for unit conversion is: L/100km = 235 / mpg
         
