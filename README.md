@@ -5,27 +5,30 @@ This data science project focuses on the analysis of Automobile data set from co
 ## Data Wrangling procedures
 
 ### 1. Handle missing values
-* Convert "?" to NaN -- In the car dataset, missing data comes with the question mark "?". i replaced the "?" with NaN (Not a Number)
-* Evaluating for Missing Data -- check wether there are anymore missing data
-* Count missing values in each column -- Using a for loop in Python, i counted the number of null values in each column. Alternatively, i also used the isnull().sum() function
+* Convert "?" to NaN -- In the car dataset, missing data comes with the question mark "?". To dela with this, I replaced the "?" with NaN (Not a Number) in the dataset
+* Evaluating for Missing Data -- Here, I checked wether there were any anymore missing data
+* Count missing values in each column -- Using a for loop in Python, I counted the number of null values in each column. Alternatively, i also used the isnull().sum() function
 
 #### 1.1 Deal with missing data
+In this section, i explain how i handles the missing data and justify the reasons for handling data in the way it was done.
 
 ##### 1.1.1 Drop data:
-* Drop the whole row -- "price": 4 missing data, simply delete the whole row -- Reason: price is what we want to predict. Any data entry without price data cannot be used for prediction; therefore any row now without price data is not useful to us
-* Drop the whole column
+* Drop the whole row -- since "price" had 4 missing values, I simply deleted the whole row because price is what we want to predict. Any data entry without price data cannot be used for prediction; therefore any row now without price data is not useful to us
 
 ##### 1.1.2 Replace data
 ###### Replace it by mean:
-* "normalized-losses": 41 missing data, replace them with mean
-* "stroke": 4 missing data, replace them with mean
-* "bore": 4 missing data, replace them with mean
-* "horsepower": 2 missing data, replace them with mean
-* "peak-rpm": 2 missing data, replace them with mean
+Here, i replaced the missing data with the average of the column. Below columns were replaced with average values;
+* "normalized-losses": 41 missing data
+* "stroke": 4 missing data
+* "bore": 4 missing data
+* "horsepower": 2 missing data
+* "peak-rpm": 2 missing data
 ##### Replace it by frequency
-* "num-of-doors": 2 missing data, replace them with "four". -- Reason: 84% sedans is four doors. Since four doors is most frequent, it is most likely to occur
+* I replaced "num-of-doors" which has 2 missing data, with "four". -- Reason being : 84% sedans is four doors. Since four doors is most frequent, it is most likely to occur
                                      
 ### 2. Correct data format: 
+Here, I ensured that the data columns are in there correct data types before performing further analysis. The procedure i followed was:
+
 * list the data types for each column
 * Convert data types to proper format
         * bore,stroke, price and peak-prm to float
