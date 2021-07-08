@@ -53,3 +53,11 @@ This data science project focuses on the analysis of Automobile data set from co
 We use indicator variables so we can use categorical variables for regression analysis in the later modules. We see the column "fuel-type" has two unique values: "gas" or "diesel". Regression doesn't understand words, only numbers. To use this attribute in regression analysis, we convert "fuel-type" to indicator variables.
 
 ***
+## Exploratory Data Analysis 
+The main objective here was to Explore features or charecteristics to predict price of car
+### 1. Import Data from Module
+### 2. Analyzing Individual Feature Patterns using Visualization
+### 3. Descriptive Statistical Analysis
+### 4. Basics of Grouping
+### 5. Correlation and Causation
+### 6. ANOVA
