@@ -36,25 +36,26 @@ Here, I ensured that the data columns are in there correct data types before per
 * list the columns after the conversion
         
 ### 3. Standardize data
- * `Standardization` is the process of transforming data into a common format, allowing for meaningful comparison. In our dataset, the fuel consumption columns "city-mpg" and "highway-mpg" are represented by mpg (miles per gallon) unit. Assume we are developing an application in a country that accepts the fuel consumption with L/100km standard.
+ * `Standardization` is the process of transforming data into a common format, allowing for meaningful comparison. In my dataset, the fuel consumption columns "city-mpg" and "highway-mpg" are represented by mpg (miles per gallon) unit. Assume we are developing an application in a country that accepts the fuel consumption with L/100km standard.
 * We will need to apply data transformation to transform mpg into L/100km. 
 * The formula for unit conversion is: L/100km = 235 / mpg
         
 ### 4. Normalize data
 * `Normalization` is the process of transforming values of several variables into a similar range
-*  we scale the columns "length", "width" and "height".
+*  I, for example, scaled the columns "length", "width" and "height".
         * Target: would like to normalize those variables so their value ranges from 0 to 1
         * Approach: replace original value by (original value)/(maximum value)        
         
 ### 5. Binning
 * `Binning` is a process of transforming continuous numerical variables into discrete categorical 'bins' for grouped analysis.
-* Example: --> In our dataset, "horsepower" is a real valued variable ranging from 48 to 288 and it has 57 unique values. What if we only care about the price difference between cars with high horsepower, medium horsepower, and little horsepower (3 types)? Can we rearrange them into three ‘bins' to simplify analysis?
-        We will use the pandas method 'cut' to segment the 'horsepower' column into 3 bins.
-* Bins Visualization
+* Example: --> In my dataset, "horsepower" is a real valued variable ranging from 48 to 288 and it has **57** unique values. What if we only care about the price difference between cars with high horsepower, medium horsepower, and little horsepower (3 types)? Can we rearrange them into three ‘bins' to simplify analysis?
+        I used the pandas method 'cut' to segment the 'horsepower' column into 3 bins.
+* Bins Visualization - Here, i visualized the bins created above to see there distributions
         
 ### 6. Indicator Variable (or Dummy Variable)
-We use indicator variables so we can use categorical variables for regression analysis in the later modules. We see the column "fuel-type" has two unique values: "gas" or "diesel". Regression doesn't understand words, only numbers. To use this attribute in regression analysis, we convert "fuel-type" to indicator variables.
+We use indicator variables so we can use categorical variables for regression analysis in the later modules. The column "fuel-type" has two unique values: "gas" or "diesel". Regression doesn't understand words, only numbers. To use this attribute in regression analysis, we convert "fuel-type" to indicator variables.
 
+***
 ***
 ## Exploratory Data Analysis 
 The main objective here was to Explore features or charecteristics to predict price of car
@@ -85,3 +86,4 @@ Here we do the basic importing from the clead data set ie cleandf.csv
 * let's group by the variable "drive-wheels". 
 ### 5. Correlation and Causation
 ### 6. ANOVA
+***
