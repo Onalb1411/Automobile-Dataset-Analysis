@@ -56,7 +56,7 @@ Here, I ensured that the data columns are in there correct data types before per
 We use indicator variables so we can use categorical variables for regression analysis in the later modules. The column "fuel-type" has two unique values: "gas" or "diesel". Regression doesn't understand words, only numbers. To use this attribute in regression analysis, we convert "fuel-type" to indicator variables.
 
 ***
-***
+
 ## Exploratory Data Analysis 
 The main objective here was to Explore features or charecteristics to predict price of car
 ### 1. Import Data from Module
