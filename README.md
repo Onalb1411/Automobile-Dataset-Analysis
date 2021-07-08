@@ -56,7 +56,26 @@ We use indicator variables so we can use categorical variables for regression an
 ## Exploratory Data Analysis 
 The main objective here was to Explore features or charecteristics to predict price of car
 ### 1. Import Data from Module
+Here we do the basic importing from the clead data set ie cleandf.csv
+
 ### 2. Analyzing Individual Feature Patterns using Visualization
+* Quiz -- Find the correlation between the following columns: bore, stroke, compression-ratio, and horsepower.
+
+#### Positive Linear Relationship
+* Let's find the scatterplot of "engine-size" and "price".
+* We can examine the correlation between 'engine-size' and 'price' and see that it's approximately 0.87.
+* Highway mpg is a potential predictor variable of price. Let's find the scatterplot of "highway-mpg" and "price".
+* We can examine the correlation between 'highway-mpg' and 'price' and see it's approximately -0.704.
+#### Weak Linear Relationship
+* Let's see if "peak-rpm" is a predictor variable of "price".
+* We can examine the correlation between 'peak-rpm' and 'price' and see it's approximately -0.101616.
+* Find the correlation between x="stroke" and y="price".
+
+#### Categorical Variables
+* Let's look at the relationship between "body-style" and "price".
+* Let's examine engine "engine-location" and "price":
+* Let's examine "drive-wheels" and "price".
+
 ### 3. Descriptive Statistical Analysis
 ### 4. Basics of Grouping
 ### 5. Correlation and Causation
