@@ -18,11 +18,8 @@ In this section, i explain how i handles the missing data and justify the reason
 ##### 1.1.2 Replace data
 ###### Replace it by mean:
 Here, i replaced the missing data with the average of the column. Below columns were replaced with average values;
-* "normalized-losses": 41 missing data
-* "stroke": 4 missing data
-* "bore": 4 missing data
-* "horsepower": 2 missing data
-* "peak-rpm": 2 missing data
+* "normalized-losses": 41 missing data, "stroke": 4 missing data, "bore": 4 missing data, "horsepower": 2 missing data, "peak-rpm": 2 missing data
+
 ##### Replace it by frequency
 * I replaced "num-of-doors" which has 2 missing data, with "four". -- Reason being : 84% sedans is four doors. Since four doors is most frequent, it is most likely to occur
                                      
