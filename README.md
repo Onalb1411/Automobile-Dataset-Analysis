@@ -33,15 +33,11 @@ Here, I ensured that the data columns are in there correct data types before per
 * list the columns after the conversion
         
 ### 3. Standardize data
- * `Standardization` is the process of transforming data into a common format, allowing for meaningful comparison. In my dataset, the fuel consumption columns "city-mpg" and "highway-mpg" are represented by mpg (miles per gallon) unit. Assume we are developing an application in a country that accepts the fuel consumption with L/100km standard.
-* We will need to apply data transformation to transform mpg into L/100km. 
-* The formula for unit conversion is: L/100km = 235 / mpg
+ * `Standardization` is the process of transforming data into a common format, allowing for meaningful comparison. In my dataset, the fuel consumption columns "city-mpg" and "highway-mpg" are represented by mpg (miles per gallon) unit. Assume we are developing an application in a country that accepts the fuel consumption with L/100km standard. We will need to apply data transformation to transform mpg into L/100km. The formula for unit conversion is: L/100km = 235 / mpg
         
 ### 4. Normalize data
 * `Normalization` is the process of transforming values of several variables into a similar range
-*  I, for example, scaled the columns "length", "width" and "height".
-        * Target: would like to normalize those variables so their value ranges from 0 to 1
-        * Approach: replace original value by (original value)/(maximum value)        
+*  I, for example, scaled the columns "length", "width" and "height". I normalized these variables so their value ranges from 0 to 1. Approach: replace original value by (original value)/(maximum value)        
         
 ### 5. Binning
 * `Binning` is a process of transforming continuous numerical variables into discrete categorical 'bins' for grouped analysis.
