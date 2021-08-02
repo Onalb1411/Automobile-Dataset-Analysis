@@ -74,7 +74,7 @@ Here we do the basic importing from the clead data set ie cleandf.csv
 * Let's examine "drive-wheels" and "price".
 
 ### 3. Descriptive Statistical Analysis
-* Let's first take a look at the variables by utilizing a description method.
+* Let's first take a look at the variables by utilizing a description method
 ### 4. Basics of Grouping
 * let's group by the variable "drive-wheels". 
 ### 5. Correlation and Causation
