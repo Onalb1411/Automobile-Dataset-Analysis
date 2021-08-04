@@ -2,7 +2,7 @@
 This data science project focuses on the analysis of Automobile data set from cognitiveclasses.ai. This project is done as part of the *Data Analysis with Python* course path. You can find the "Automobile Dataset" <a href = "https://archive.ics.uci.edu/ml/machine-learning-databases/autos/imports-85.data." target = "_blank"> here </a> 
 
 ***
-## Data Wrangling procedures
+## Data Wrangling procedure
 
 ### 1. Handle missing values
 * Convert "?" to NaN -- In the car dataset, missing data comes with the question mark "?". To dela with this, I replaced the "?" with NaN (Not a Number) in the dataset
